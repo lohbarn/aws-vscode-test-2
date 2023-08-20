@@ -12,6 +12,7 @@ const icon = (name) => (
   // <Iconify icon="fluent:mail-24-filled" />
   // https://icon-sets.iconify.design/solar/
   // https://www.streamlinehq.com/icons
+  // https://www.svgrepo.com/ - best all free hehe
 );
 
 const ICONS = {
@@ -23,15 +24,18 @@ const ICONS = {
   file: icon('ic_file'),
   lock: icon('ic_lock'),
   tour: icon('ic_tour'),
+  fruit: icon('ic_fruit'),
   order: icon('ic_order'),
   label: icon('ic_label'),
   blank: icon('ic_blank'),
+  juicer: icon('ic_juicer'),
   kanban: icon('ic_kanban'),
   folder: icon('ic_folder'),
   banking: icon('ic_banking'),
   booking: icon('ic_booking'),
   invoice: icon('ic_invoice'),
   product: icon('ic_product'),
+  database: icon('ic_database'),
   calendar: icon('ic_calendar'),
   disabled: icon('ic_disabled'),
   external: icon('ic_external'),
@@ -39,6 +43,7 @@ const ICONS = {
   ecommerce: icon('ic_ecommerce'),
   analytics: icon('ic_analytics'),
   dashboard: icon('ic_dashboard'),
+  fruitJuice: icon('ic_fruit_juice'),
 };
 
 // ----------------------------------------------------------------------
@@ -49,14 +54,14 @@ export function useNavData() {
       // OVERVIEW
       // ----------------------------------------------------------------------
       {
-        subheader: 'overview v5.4.0',
+        subheader: 'navigation',
         items: [
-          { title: 'one', path: paths.dashboard.root, icon: ICONS.dashboard },
-          { title: 'two', path: paths.dashboard.two, icon: ICONS.ecommerce },
+          { title: 'texts', path: paths.dashboard.root, icon: ICONS.fruit },
+          { title: 'juicer', path: paths.dashboard.two, icon: ICONS.juicer },
           {
-            title: 'three',
+            title: 'workflow',
             path: paths.dashboard.three,
-            icon: ICONS.analytics,
+            icon: ICONS.fruitJuice,
           },
         ],
       },
